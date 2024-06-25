@@ -46,7 +46,7 @@ If you are connected to NITC wifi ,You can view the Streamlit app [here.](http:/
 
 >If you encounter COM Error, Detach and Reattach the Fingerprint-Sensor from Breadboard and press the boot switch in esp32.
 
-7.Edit the [Finger_Print_Completed.ino](</Arduino Code\Finger_print_Completed\Finger_print_Completed.ino>) adding all the names in the string seperated by the comma with the index same as ID
+7.Edit the [Finger_Print_Completed.ino](</Arduino Code/Finger_print_Completed/Finger_print_Completed.ino>) adding all the names in the string seperated by the comma with the index same as ID
 
 ---
 ### How to Setup a workspace in Raspberry Pi-3B from scratch

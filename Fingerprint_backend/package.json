@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@serialport/parser-readline": "^9.2.4",
+    "moment-timezone": "^0.5.45",
+    "mysql2": "^3.9.8",
+    "serialport": "^9.2.8"
+  }
+}

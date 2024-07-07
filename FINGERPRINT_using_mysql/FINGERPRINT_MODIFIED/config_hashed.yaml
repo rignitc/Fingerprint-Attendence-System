@@ -1,0 +1,14 @@
+cookie:
+  expiry_days: 2
+  key: random_signature_key
+  name: random_cookie_name
+credentials:
+  usernames:
+    rig_admin:
+      failed_login_attempts: 0
+      logged_in: false
+      name: RIG_ADMIN
+      password: $2b$12$6zs1nsDJgq3JTEelZEYSIueQdNwSGjLYNl2qlkzXSN29x5vqZwkcW
+pre-authorized:
+  emails:
+  - rignitc@gmail.com

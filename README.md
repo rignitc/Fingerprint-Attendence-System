@@ -75,7 +75,7 @@ pip3 freeze > requirements.txt
 
 6.Open a terminal and run `sudo micro ~/.bashrc` and copy the code after the last lines in bashrc to make the code run in the background whenever the pi is powered on.
 ```bash
-source etc/bin/activate
+source env/bin/activate
 node server30.js
 streamlit run 
 ```

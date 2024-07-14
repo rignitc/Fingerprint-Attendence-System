@@ -8,7 +8,7 @@ If you are connected to NITC wifi ,You can view the Streamlit app [here.](http:/
 | R307 Fingerprint Sensor | Maria DB          |
 | Rasberry Pi 3B          | Arduino Code      |
 | PowerBank               | JavaScript Code   |
-| RTC Module              | Streamlit         |
+| RTC Module DC3231             | Streamlit         |
 | ESP32                   | Firebase          |
 ## Overview
 <div class = Overview style="display:flex">
@@ -73,11 +73,9 @@ pip3 freeze > requirements.txt
 
 5.Setup [Maria DB](https://raspberrytips.com/install-mariadb-raspberry-pi/)
 
-6.Open a terminal and run `sudo micro ~/.bashrc` and copy the code after the last lines in bashrc to make the code run in the background whenever the pi is powered on.
-```bash
-source etc/bin/activate
-node server30.js
-streamlit run 
+6.```
+sudo micro /etc/systemd/system/StreamlitService.service
+
 ```
 
 ## Reference

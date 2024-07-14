@@ -46,7 +46,7 @@ If you are connected to NITC wifi ,You can view the Streamlit app [here.](http:/
 
 >If you encounter COM Error, Detach and Reattach the Fingerprint-Sensor from Breadboard and press the boot switch in esp32.
 
-7.Edit the [Finger_Print_Completed.ino](</Arduino Code\Finger_print_Completed\Finger_print_Completed.ino>) adding all the names in the string seperated by the comma with the index same as ID
+7.Edit the [Finger_Print_Completed.ino](</Arduino Code/Finger_print_Completed/Finger_print_Completed.ino>) adding all the names in the string seperated by the comma with the index same as ID
 
 ---
 ### How to Setup a workspace in Raspberry Pi-3B from scratch
@@ -73,6 +73,11 @@ pip3 freeze > requirements.txt
 
 5.Setup [Maria DB](https://raspberrytips.com/install-mariadb-raspberry-pi/)
 
+6.Open a terminal and run `sudo micro ~/.bashrc` and copy the code after the last lines in bashrc to make the code run in the background whenever the pi is powered on.
+```bash
+source env/bin/activate
+node server30.js
+streamlit run 
 6.```
 sudo micro /etc/systemd/system/StreamlitService.service
 

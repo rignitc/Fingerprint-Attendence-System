@@ -56,11 +56,19 @@ If you are connected to NITC wifi ,You can view the Streamlit app [here.](http:/
 sudo apt install micro
 ```
 
-2.[Setup a python venv](https://learn.adafruit.com/python-virtual-environment-usage-on-raspberry-pi/basic-venv-usage)
+2.Clone this repository
+3.Copy the Necessary files
 
-3.Clone this repository
+| Files                       | Desired Directory    |
+|-----------------------------|----------------------|
+| Fingerprint_backend         | /home/admin/Desktop  |
+| Fingerprint_using_mysql     | /home/admin/Desktop  |
+| streamlit.sh                | /home/admin          |
+|streamlitService.service     | /etc/systemd/system/ |
 
-4.Open a terminal inside the repository and run 
+4.[Setup a python venv](https://learn.adafruit.com/python-virtual-environment-usage-on-raspberry-pi/basic-venv-usage)
+
+5.Open a terminal inside the repository and run 
 ```bash
 pip3 install -r requirements.txt
 ```
@@ -69,19 +77,15 @@ pip3 install -r requirements.txt
 ```bash 
 pip3 freeze > requirements.txt
 ```
+6.Setup [Maria DB](https://raspberrytips.com/install-mariadb-raspberry-pi/)
 
-
-5.Setup [Maria DB](https://raspberrytips.com/install-mariadb-raspberry-pi/)
-
-6.Open a terminal and run `sudo micro ~/.bashrc` and copy the code after the last lines in bashrc to make the code run in the background whenever the pi is powered on.
-```bash
-source env/bin/activate
-node server30.js
-streamlit run 
-6.```
-sudo micro /etc/systemd/system/StreamlitService.service
-
+7.Run the following code to setup the service file
 ```
+sudo systemctl daemon-reload
+sudo systemctl enable streamlitService.service
+sudo systemctl start streamlitService.service
+```
+>To check the status of service run `sudo systemctl status myservice.service`
 
 ## Reference
 

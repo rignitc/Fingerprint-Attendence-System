@@ -1,0 +1,14 @@
+[Unit]
+Description=Streamlit Service
+After=network.target
+
+[Service]
+ExecStart=/home/admin/streamlit.sh
+WorkingDirectory=/home/admin/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=admin
+
+[Install]
+WantedBy=multi-user.target
